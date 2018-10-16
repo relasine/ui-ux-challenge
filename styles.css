@@ -41,6 +41,10 @@ li span {
   border: 1px solid rgb(195, 195, 195);
 }
 
+main {
+  padding-top: 2rem
+}
+
 main h2 {
   text-align: center;
 }
@@ -51,7 +55,6 @@ header h1 {
   text-align: center;
   background: var(--Blue);
   font-size: 50px;
-
 }
 
 table {
@@ -195,4 +198,19 @@ input[type="checkbox"] {
 
 .dropdown {
   padding: 1rem 0;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--Blue);
+  color: var(--White);
+  padding-bottom: 1rem;
+}
+
+footer i {
+  color: var(--White);
+}
+
+footer p {
+  width: 100%
 }
