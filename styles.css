@@ -50,6 +50,7 @@ table td:hover {
 
 i {
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .calendar,
@@ -73,4 +74,36 @@ i {
 
 p {
   display: inline-block;
+}
+
+.drop-down-options {
+  display: flex;
+}
+
+.drop-down-options li {
+  padding-right: 20px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.drop-down-options {
+  display: none;
+}
+
+#checkbox_toggle:checked ~ .drop-down-options {
+  display: block;
+}
+
+#checkbox_toggle2:checked ~ .drop-down-options {
+  display: block;
+}
+
+#checkbox_toggle3:checked ~ .drop-down-options {
+  display: block;
+}
+
+.dropdown {
+  padding: 1rem 0;
 }
