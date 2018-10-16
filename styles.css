@@ -1,0 +1,76 @@
+* {
+  --Red: #ad343e;
+  --White: #ffffff;
+  --Blue: #2b64d5;
+  --Gray: #5c615c3a;
+  --Black: #000000;
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: var(--Gray);
+}
+
+main h2 {
+  text-align: center;
+}
+
+header h1 {
+  text-align: center;
+}
+
+table {
+  width: 300px;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 5px 0;
+}
+
+table td:hover {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.37);
+  border-radius: 20px;
+}
+
+i {
+  margin-left: 1rem;
+}
+
+.calendar,
+.workout-tracker {
+  max-width: 400px;
+  margin: 0 5rem;
+}
+
+.goal-setting li {
+  border: 1px solid var(--Gray);
+  padding: 1rem;
+}
+
+.activity-list {
+  text-align: left;
+}
+
+.activity-list i {
+  float: right;
+}
+
+p {
+  display: inline-block;
+}
