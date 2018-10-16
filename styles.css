@@ -4,15 +4,18 @@
   --Blue: #2b64d5;
   --Gray: #5c615c3a;
   --Black: #000000;
-  font-family: "Kanit", sans-serif;
-  margin: 0;
+  font-family: 'futura', sans-serif;
+  font-weight: 300;  margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: .2s;
 }
 
-main {
+main {  
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  background: rgb(216, 216, 216);
 }
 
 li {
@@ -29,7 +32,12 @@ main h2 {
 }
 
 header h1 {
+  padding: 1.5rem 0;
+  color: #fff;
   text-align: center;
+  background: var(--Blue);
+  font-size: 50px;
+
 }
 
 table {
@@ -39,13 +47,14 @@ table {
 
 th,
 td {
-  padding: 5px 0;
+  padding: 5px 0;  
+  border-radius: 20px;
+
 }
 
 table td:hover {
   cursor: pointer;
   background-color: rgba(211, 211, 211, 0.37);
-  border-radius: 20px;
 }
 
 i {
@@ -55,13 +64,17 @@ i {
 
 .calendar,
 .workout-tracker {
-  max-width: 400px;
-  margin: 0 5rem;
+  width: 400px;
+  margin: 0 4rem;
 }
 
 .goal-setting li {
   border: 1px solid var(--Gray);
   padding: 1rem;
+}
+
+.calendar-table {
+  margin: auto;
 }
 
 .activity-list {
@@ -74,6 +87,63 @@ i {
 
 p {
   display: inline-block;
+  width: 100px;
+}
+
+.workout-type {
+  width: 125px;
+}
+
+.red,
+.blue {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red {
+  border: 2px solid var(--Red);
+
+}
+
+.blue {
+  border: 2px solid var(--Blue);
+}
+
+.weight-training {
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  border: 2px solid var(--Blue);
+  border-radius: 50%;
+}
+
+.cardio {
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  border: 2px solid var(--Red);
+  border-radius: 50%;
+}
+
+.weight-training,
+.cardio {
+  margin-bottom: 3px;
+}
+
+.goal-setting li span {
+  margin-left: 3.5rem;
+}
+
+.goal-setting li i {
+  float: right;
+}
+
+@media (max-width: 1055px) {
+  .workout-tracker h2 {
+    margin-top: 2rem;
+  }
 }
 
 .drop-down-options {
